@@ -63,6 +63,7 @@ public class BubbleSort {
         }
     }
 
+    // Testing:
     public static void main(String[] args) {
         int[] testArr = {1, 10, 4, 3, 5, 8};
 
