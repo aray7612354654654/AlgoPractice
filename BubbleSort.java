@@ -35,7 +35,10 @@ public class BubbleSort {
     * {1, 2, 4, 5, 8}
     */
 
-    public void ascendingBubble(int[] intArr) {
+    /**
+    * Sorts the inputted array from smallest to largest.
+    */
+    public static void ascendingBubble(int[] intArr) {
         for (int i; i < intArr.length(); i++) {
             int currentVal = intArr[i];
             int nextVal = intArr[i + 1];
@@ -46,7 +49,10 @@ public class BubbleSort {
         }
     }
 
-    public void descendingBubble(int[] intArr) {
+    /**
+    * Sorts the inputted array from largest to smallest.
+    */
+    public static void descendingBubble(int[] intArr) {
         for (int i; i < intArr.length(); i++) {
             int currentVal = intArr[i];
             int nextVal = intArr[i + 1];
@@ -55,6 +61,35 @@ public class BubbleSort {
                 intArr[i] = nextVal;
             }
         }
+    }
+
+    public static void main(String[] args) {
+        int[] testArr = {1, 10, 4, 3, 5, 8};
+
+        // Printing the test array
+        System.out.println("Our Test Array: [")
+        for (int i; i < testArr.length(); i++) {
+            System.out.println(testArr[i]);
+        }
+        System.out.println("]")
+
+        // Performing an ascending Bubble Sort:
+        BubbleSort.ascendingBubble(testArr);
+        // Printing ascending Bubble Sort:
+        System.out.println("Ascending Bubble Sort: [")
+        for (int i; i < testArr.length(); i++) {
+            System.out.println(testArr[i]);
+        }
+        System.out.println("]")
+
+        // Performing a descending Bubble Sort:
+        BubbleSort.descendingBubble(testArr);
+        // Printing descending Bubble Sort
+        System.out.println("Descending Bubble Sort: [")
+        for (int i; i < testArr.length(); i++) {
+            System.out.println(testArr[i]);
+        }
+        System.out.println("]")
     }
 
 }
