@@ -46,4 +46,15 @@ public class BubbleSort {
         }
     }
 
+    public void descendingBubble(int[] intArr) {
+        for (int i; i < intArr.length(); i++) {
+            int currentVal = intArr[i];
+            int nextVal = intArr[i + 1];
+            if (currentVal < nextVal) {
+                intArr[i + 1] = currentVal;
+                intArr[i] = nextVal;
+            }
+        }
+    }
+
 }
