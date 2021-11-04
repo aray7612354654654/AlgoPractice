@@ -7,7 +7,7 @@
 public class SelectionSort {
 
     /**
-    * Sorts an array by repeatedly finding the currentimum element (for ascending)
+    * Sorts an array by repeatedly finding the current minimum element (for ascending)
     * from unsorted part and putting it at the beginning. 
     *
     * The algorithm maintains two subarrays in a given array.
